@@ -1,6 +1,6 @@
 body{
   background: hsl(0, 0%, 100%);
-  background-image: url(../images/bg-main-desktop.png);
+  background-image: url(images/bg-main-desktop.png);
   background-repeat: repeat-y;
   background-size: auto;
   min-height: 100vh;
@@ -182,7 +182,7 @@ span{
 
 @media (max-width: 912px) {
   body{
-    background-image: url(../images/bg-main-mobile.png);
+    background-image: url(images/bg-main-mobile.png);
     background-repeat: repeat-x;
     background-size: auto;
   }
