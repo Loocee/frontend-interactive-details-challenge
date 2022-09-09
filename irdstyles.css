@@ -271,6 +271,10 @@ span{
     left: 140px;
   }
 
+  .form-div{
+    margin: 400px 0 0 0;
+  }
+  
   .card-details{
     position: absolute;
     top: 280px;
