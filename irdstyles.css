@@ -1,0 +1,316 @@
+body{
+  background: hsl(0, 0%, 100%);
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: repeat-y;
+  background-size: auto;
+  min-height: 100vh;
+  color: hsl(278, 68%, 11%);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+h2{
+  letter-spacing: 1.8px;
+}
+
+input{
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  border-color: hsl(270, 3%, 87%);
+  border-style: solid;
+  border-width: thin;
+}
+
+input::placeholder{
+color: hsl(270, 3%, 87%);
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+ input:focus{
+  outline: none;
+  border-image-source: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  border-image-slice: 1;
+}
+
+form, .completed-state{
+  width: 320px;
+  height: auto;
+  margin: 60px 0;
+}
+
+body, .form-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span{
+  font-size: 0.7rem;
+  display: none;
+  color: hsl(0, 100%, 66%);
+}
+
+.container, .row{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  position: relative;
+  right: 425px;
+  bottom: 75px;
+}
+
+.card-details{
+  position: relative;
+  left: 25px;
+  bottom: 350px;
+}
+
+.card-details, .left-align{
+  width: 390px;
+}
+
+.card-details, .left-align, .confirm{
+  color: hsl(0, 0%, 100%);
+}
+
+.flexbox, .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.back{
+  position: relative;
+  left: 100px;
+  top: 40px;
+}
+
+.left-align{
+  text-align: right;
+  position: relative;
+  bottom: 183px;
+  left: 100px;
+}
+
+.date{
+  display: inline-block;
+  width: 60px;
+}
+
+.input-number-label, #input-number, .number-error{
+  position: relative;
+  top: 10px;
+}
+
+.wrapper{
+  position: relative;
+  top: 20px;
+}
+
+.in-block{
+  width: 160px;
+}
+
+.confirm{
+  width: 100%;
+  position: relative;
+  top: 40px;
+  border-style: none;
+  background: hsl(278, 68%, 11%);
+  border-radius: 5px;
+  height: 2.5rem;
+}
+
+
+/*************************** completed state **********************************/
+.completed-state{
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+.completed-para{
+  color: hsl(279, 6%, 55%);
+}
+
+
+/*************************** errors ******************************/
+.error:focus{
+  outline: none;
+  border: thin solid red;
+}
+
+
+/************************** media query ****************************/
+@media (max-width: 1024px) {
+  .logo{
+    position: relative;
+    left: 20px;
+    bottom: 230px;
+  }
+
+  .card-details{
+    position: relative;
+    bottom: 400px;
+  }
+
+  .back{
+    position: relative;
+    left: 60px;
+    top: 40px;
+  }
+
+  .left-align{
+    position: relative;
+    left: 60px;
+  }
+}
+
+@media (max-width: 912px) {
+  body{
+    background-image: url(../images/bg-main-mobile.png);
+    background-repeat: repeat-x;
+    background-size: auto;
+  }
+
+  .logo{
+    position: absolute;
+    left: 140px;
+    top: 250px;
+  }
+
+  .card-details{
+    position: relative;
+    bottom: 350px;
+  }
+}
+
+@media (max-width: 820px) {
+  .logo{
+    position: absolute;
+    left: 90px;
+    top: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+
+  .logo{
+    position: absolute;
+    z-index: 1;
+    top: 180px;
+    left: 150px;
+  }
+
+  .card-details{
+    position: absolute;
+    top: 280px;
+    left: 150px;
+    z-index: 1;
+  }
+
+  .front{
+    position: absolute;
+    z-index: 1;
+    top: 143px;
+    left: 120px;
+  }
+
+  .form-div{
+    margin: 100px 0 0 0;
+  }
+
+  .back{
+    position: absolute;
+    left: 250px;
+    top: 5px;
+  }
+
+  .left-align{
+    position: absolute;
+    left: 250px;
+    top: 110px;
+  }
+}
+
+@media (max-width: 425px) {
+  img{
+    width: 100%;
+  }
+
+  body{
+    margin-left: 60%;
+  }
+
+  .logo{
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+    left: 140px;
+  }
+
+  .card-details{
+    position: absolute;
+    top: 280px;
+    left: 140px;
+    z-index: 1;
+  }
+
+  .left-align, .card-details{
+    width: 85%;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-details{
+    position: absolute;
+    top: 260px;
+    z-index: 1;
+  }
+
+  .left-align{
+    position: absolute;
+    left: 250px;
+    top: 95px;
+  }
+}
+
+@media (max-width: 320px) {
+  h2{
+    letter-spacing: normal;
+  }
+
+  .card-details{
+    position: absolute;
+    top: 240px;
+    z-index: 1;
+  }
+
+  .left-align{
+    position: absolute;
+    left: 250px;
+    top: 80px;
+  }
+}
