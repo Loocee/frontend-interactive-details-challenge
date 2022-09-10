@@ -260,10 +260,14 @@ span{
     width: 100%;
   }
 
-  body{
+/*   body{
     margin-left: 68%;
+  } */
+  
+  form{
+    width: 100%;
   }
-
+  
   .logo{
     position: absolute;
     z-index: 1;
