@@ -62,12 +62,6 @@ span{
   color: hsl(0, 100%, 66%);
 }
 
-.container, .row{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .logo{
   position: relative;
   right: 425px;
